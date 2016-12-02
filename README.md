@@ -9,7 +9,7 @@ Specification
 Version 1
 ---------
 
-Implement a system that contains the business logic to produce receipts similar to this, based on a `json` price list and test orders. A sample `.json` [file](hipstercoffee.json) has been provided with the list of products sold at this particular coffee shop. 
+Implement a system that contains the business logic to produce receipts similar to this, based on a `json` price list and test orders.
 
 Here are some sample orders you can try - whether you use this information is up to you:
 
@@ -24,7 +24,3 @@ Here are some sample orders you can try - whether you use this information is up
 > 5 x Blueberry Muffin  
 
 Your receipt must calculate and show the correct amount of tax (in this shop's case, 8.64%), as well as correct line totals and total amount. Do not worry about calculating discounts or change yet. Consider what output formats may be suitable.
-
-
-
-
