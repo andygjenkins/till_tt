@@ -16,7 +16,7 @@ describe Parser do
       "Muffin Of The Day"=>4.55}]}
 
   it 'parses json file that menu items can be accessed' do
-    expect(parser.cafe_data).to eq(parsed_file)
+    expect(parser.data_hash).to eq(parsed_file)
   end
 
 end

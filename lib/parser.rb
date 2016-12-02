@@ -2,11 +2,10 @@ require 'json'
 
 class Parser
 
-file = File.read('hipster.json')
-data_hash = JSON.parse(file)
-puts data_hash.keys
-puts data_hash['prices']
-puts data_hash
+  attr_reader :data_hash
 
-
+  def initialize(data_file)
+    json = File.read(data_file)
+    @data_hash = JSON.parse(json)
+  end
 end
