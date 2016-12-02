@@ -4,6 +4,10 @@ require_relative 'parser'
 
 class Till
 
+  def initialize(json = 'hispter.json')
+    @menu = Menu.new(json)
+    @order = Order.new
+  end
 
 
 end
@@ -21,6 +25,13 @@ end
 
 
 class Order
+
+  attr_reader :list , :customers
+
+  def initialize
+    @list = []
+    @customers = []
+  end
 
 end
 
